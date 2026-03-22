@@ -207,7 +207,7 @@ No additional user input is required — the classification label triggers the f
 | Category | Tools |
 |---|---|
 | Deep Learning | PyTorch 2.x · torchvision |
-| LLM / RAG | LangChain · OpenAI GPT-mini-5 · BioMistral-7B |
+| LLM / RAG | LangChain · OpenAI GPT-mini-5 |
 | Embeddings | HuggingFace — S-PubMedBert-MS-MARCO |
 | Vector DB | FAISS |
 | Data APIs | PubMed · FDA · WHO GHO · ClinicalTrials.gov |
@@ -249,48 +249,6 @@ HEALBOT/
 
 ---
 
-## Setup & Usage
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/healbot.git
-cd healbot
-```
-
-### 2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Set up credentials
-Edit `part1_rag/config.py`:
-```python
-KAGGLE_USERNAME = "your_username"
-KAGGLE_KEY      = "your_api_key"
-OPENAI_API_KEY  = "your_openai_key"
-GMAPS_API_KEY   = "your_google_maps_key"
-EMAIL           = "your_email"   # required for PubMed API
-```
-
-### 4. Run Part 1 — Build RAG Database
-```bash
-python part1_rag/ingest.py        # Fetch data from APIs
-python part1_rag/build_db.py      # Build FAISS vector database
-```
-
-### 5. Download DermNet and Train Part 2
-```bash
-# Dataset downloads automatically via Kaggle API
-python part2_image/train.py
-```
-
-### 6. Run HEALBOT
-```bash
-python app.py
-```
-
----
-
 ## Future Work
 
 - [ ] Larger LLMs for higher answer quality
@@ -309,5 +267,4 @@ This project is for academic and research purposes.
 ## Acknowledgements
 - [DermNet Dataset — Kaggle](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
 - [S-PubMedBert — HuggingFace](https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO)
-- [BioMistral-7B — HuggingFace](https://huggingface.co/BioMistral/BioMistral-7B)
 - PubMed · FDA · WHO · ClinicalTrials.gov for open medical APIs
