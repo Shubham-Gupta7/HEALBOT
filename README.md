@@ -15,7 +15,6 @@
 - [Results](#results)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
-- [Setup & Usage](#setup--usage)
 - [Future Work](#future-work)
 
 ---
