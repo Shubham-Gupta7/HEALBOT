@@ -190,15 +190,13 @@ No additional user input is required — the classification label triggers the f
 
 ## Results
 
-> Fill in after training completes
-
 | Model | Accuracy | Balanced Acc | AUC-ROC (macro) |
 |---|---|---|---|
-| EfficientNetV2-L | — | — | — |
-| EfficientNetV2-L + TTA | — | — | — |
-| ConvNeXt-Base | — | — | — |
-| ConvNeXt-Base + TTA | — | — | — |
-| **Ensemble (V2-L + CNX + TTA)** | **—** | **—** | **—** |
+| EfficientNetV2-L | 0.7704 | 0.7493 | 0.9638 |
+| EfficientNetV2-L + TTA | 0.7746 | 0.7571 | 0.9700 |
+| ConvNeXt-Base | 0.7209 | 0.7322 | 0.9711 |
+| ConvNeXt-Base + TTA | 0.7321 | 0.7420 | 0.9727 |
+| **Ensemble (V2-L + CNX + TTA)** | **0.7791** | **0.7684** | **0.9766** |
 
 ---
 
