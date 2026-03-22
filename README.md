@@ -135,7 +135,7 @@ Actinic Keratosis · Basal Cell Carcinoma · Seborrheic Keratosis · Tinea Ringw
 
 ### Training Curves
 
-![Training Curves](outputs/training_curves.png)
+![Training Curves](https://github.com/Shubham-Gupta7/HEALBOT/blob/main/training_curves.png)
 
 EfficientNetV2-L reaches ~0.77 val accuracy by epoch 30. ConvNeXt-Base reaches ~0.71. Both models continue improving — fine-tuning and SWA extract additional gains before the final ensemble.
 
